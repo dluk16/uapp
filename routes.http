@@ -1,0 +1,33 @@
+GET http://localhost:3333/
+
+###
+
+GET http://localhost:3333/usuario?search=
+
+###
+
+POST http://localhost:3333/usuario
+Content-Type: application/json
+Accept-Language: pt
+
+{
+    "nome":"luciano",
+    "senha":"123456",
+    "celular":"98317 3530"
+}
+
+###
+
+PUT http://localhost:3333/usuario/1
+Content-Type: application/json
+Accept-Language: pt
+
+{
+    "nome":"lucianoEun",
+    "senha":"123456",
+    "celular":"98317 3530"
+}
+
+###
+
+DELETE http://localhost:3333/usuario/1
